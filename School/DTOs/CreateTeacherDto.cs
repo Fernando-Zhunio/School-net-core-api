@@ -1,11 +1,9 @@
-﻿using School.Tools;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace School.Models
+namespace School.DTOs
 {
-    public class Teacher
+    public class CreateTeacherDto
     {
-        public int Id { get; set; }
         [Required]
         public string Name { get; set; }
         [Required]
@@ -16,6 +14,5 @@ namespace School.Models
         public string NumberDoc { get; set; }
         [Required]
         public string Email { get; set; }
-
     }
 }
