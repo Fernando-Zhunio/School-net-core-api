@@ -15,9 +15,5 @@ namespace School.DTOs
         public int PartialId { get; set; }
         [Required]
         public double note { get; set; }
-        public Period Period { get; set; }
-        public Partial Partial { get; set; }
-        public Subject Subject { get; set; }
-        public Student Student { get; set; }
     }
 }

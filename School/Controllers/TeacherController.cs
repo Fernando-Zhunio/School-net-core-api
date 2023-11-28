@@ -22,7 +22,6 @@ namespace School.Controllers
         [HttpGet]
         public async Task<ActionResult> Get([FromQuery] PaginationFilter filter)
         {
-            //var paginator = await Paginator<Teacher>.Get(context.Teachers, filter);
             return await GetPaginator(filter);
         }
 

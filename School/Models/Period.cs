@@ -1,4 +1,6 @@
-﻿namespace School.Models
+﻿using School.Controllers;
+
+namespace School.Models
 {
     public class Period
     {

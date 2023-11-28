@@ -10,6 +10,10 @@ namespace School.Config
         {
             CreateMap<CreateTeacherDto, Teacher>();
             CreateMap<CreatePeriodDto, Period>();
+            CreateMap<CreateStudentDto, Student>();
+            CreateMap<CreateSubjectDto, Subject>();
+            CreateMap<CreateNoteDto, Note>();
+            CreateMap<CreatePartialDto, Partial>();
         }
     }
 }

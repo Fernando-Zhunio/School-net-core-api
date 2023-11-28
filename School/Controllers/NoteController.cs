@@ -35,13 +35,14 @@ namespace School.Controllers
         [HttpPost]
         public async Task<ActionResult> Post([FromBody] CreateNoteDto createNoteDto)
         {
-            return await Store<CreateNoteDto>(createNoteDto);
+            return await Store<CreateNoteDto>(createNoteDto, "Get");
         }
 
         // PUT api/<NoteController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<ActionResult> Put(int id, [FromBody] CreateNoteDto value)
         {
+            return await Update(id, value);
         }
 
         // DELETE api/<NoteController>/5
