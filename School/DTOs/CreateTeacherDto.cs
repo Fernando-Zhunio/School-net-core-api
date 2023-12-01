@@ -9,6 +9,12 @@ namespace School.DTOs
         [Required]
         public string surname { get; set; }
         [Required]
+        public string Phone { get; set; }
+        [Required]
+        public string Address { get; set; }
+        [Required]
+        public string Birthday { get; set; }
+        [Required]
         public int TypeDoc { get; set; }
         [Required]
         public string NumberDoc { get; set; }

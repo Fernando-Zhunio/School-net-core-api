@@ -14,6 +14,7 @@ namespace School.Config
             CreateMap<CreateSubjectDto, Subject>();
             CreateMap<CreateNoteDto, Note>();
             CreateMap<CreatePartialDto, Partial>();
+            CreateMap<CreateCourseDto, Course>();
         }
     }
 }

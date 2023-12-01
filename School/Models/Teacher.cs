@@ -9,13 +9,18 @@ namespace School.Models
         [Required]
         public string Name { get; set; }
         [Required]
-        public string surname { get; set; }
+        public string Surname { get; set; }
         [Required]
-        public int TypeDoc { get; set; }
+        public string Phone { get; set; }
+        [Required]
+        public string Birthday { get; set; }
+        [Required]
+        public string Address { get; set; }
+        [Required]
+        public TypeDoc TypeDoc { get; set; }
         [Required]
         public string NumberDoc { get; set; }
         [Required]
         public string Email { get; set; }
-
     }
 }

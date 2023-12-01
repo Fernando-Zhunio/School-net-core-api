@@ -6,6 +6,7 @@
         public int StudentId { get; set; }
         public int SubjectId { get; set; }
         public int PeriodId { get; set; }
+        public int PartialId { get; set; }
         public double note {  get; set; }
         public Period Period { get; set; }
         public Partial Partial {  get; set; }

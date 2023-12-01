@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AutoMapper;
-using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using School;
 using School.DTOs;
 using School.Filters;
 using School.Models;
@@ -15,6 +9,7 @@ namespace School.Controllers
 {
     [Route("api/partials")]
     [ApiController]
+    [Authorize]
     public class PartialController : BaseController<Partial>
     {
         private readonly DatabaseContext _context;
